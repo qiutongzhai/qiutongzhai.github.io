@@ -1,0 +1,144 @@
+:root{
+  --display-text: 'Barlow', sans-serif;
+  --reading-text: 'Open Sans', sans-serif;
+
+  background: linear-gradient(to right, rgba(255,255,255,.4),  rgba(255,255,255,.1)), url('../img/background-3.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  overflow: auto;
+}
+
+body{
+  font-family: var(--reading-text);
+}
+
+header {
+  position: relative;
+}
+h1 {
+  font-size: 3.4rem;
+  text-align: center;
+  font-family: var(--display-text);
+  font-weight: 500;
+}
+
+main{
+  position: relative;
+}
+div{
+  position: fixed;
+  background-color: #e7ded5;
+  border-radius: 14px;
+  margin: auto;
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+
+div h2{
+  font-size: 2rem;
+  font-family: var(--display-text);
+  letter-spacing: .4rem;
+  padding-top: 10px;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+
+div p{
+  margin-top: 34px;
+}
+
+p+p {
+  margin-top: 12px;
+}
+
+@media (min-width: 1025px) {
+  div {
+    width: 46%;
+    height: 32%;
+    top: 20%;
+    right: 28%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  div {
+    width: 46%;
+    height: 32%;
+    top: 20%;
+    right: 28%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  div {
+    width: 46%;
+    height: 32%;
+    top: 20%;
+    right: 28%;
+    padding-top: 74px;
+  }
+
+  div h2{
+    font-size: 1.6rem;
+    letter-spacing: .4rem;
+    padding-top: 8px;
+  }
+
+  div p{
+    margin-top: 20px;
+  }
+
+  p+p {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  div {
+    width: 46%;
+    height: 32%;
+    top: 20%;
+    right: 28%;
+    padding-top: 74px;
+  }
+
+  div h2{
+    font-size: .8rem;
+    letter-spacing: .2rem;
+    padding-top: 8px;
+    border-bottom: 1px solid black;
+  }
+
+  div p{
+    margin-top: 16px;
+    font-size: 8px;
+  }
+  p+p{
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 319px) {
+  div {
+    width: 46%;
+    height: 32%;
+    top: 20%;
+    right: 28%;
+    padding-top: 74px;
+  }
+
+  div h2{
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    padding-top: 8px;
+  }
+
+  div p{
+    margin-top: 16px;
+    font-size: 8px;
+  }
+  p+p{
+    margin-top: 8px;
+  }
+}

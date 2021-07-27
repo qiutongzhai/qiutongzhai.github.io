@@ -1,0 +1,52 @@
+main{
+  position: relative;
+}
+
+
+nav ul{
+  list-style-type: none;
+  text-align: right;
+  margin-right: 10px;
+  width: 100px;
+  position: fixed;
+  right: 0;
+}
+
+nav ul li{
+  position: relative;
+}
+nav ul li ul {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  transition: 350ms;
+}
+
+nav ul li:hover ul {
+  visibility: visible;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+  transition: 350ms;
+}
+
+a :hover{
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+.nav-menu{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px 8px 0 0;
+}
+
+.nav-content{
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-family:'Open Sans', sans-serif;
+}
