@@ -1,0 +1,114 @@
+html{
+  --display-text: 'Barlow', sans-serif;
+  --reading-text: 'Open Sans', sans-serif;
+  font-family: var(--reading-text);
+  /* background: linear-gradient(to bottom, #c8c0b6, #c8c0b6) no-repeat; */
+  /* background-size: calc(100% - 200px) calc(100% - 140px);
+  background-position: bottom right; */
+
+  width: 100%;
+  background-image:
+
+  linear-gradient(to right, #e7ded5,#e7ded5), url('../img/hand-fill-1.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, left;
+  background-size: calc(100% - 200px) calc(100% - 140px), 100vw 100vh;
+}
+
+header{
+  position: relative;
+}
+
+ h1{
+  font-size: 3.2rem;
+  font-family: var(--display-text);
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  top:90px;
+  left: 216px;
+  color: #222;
+  letter-spacing: .8rem;
+  margin-top: 20px;
+}
+
+div {
+  width: calc(100% - 80px);
+  font-size: 15px;
+  font-family: var(--reading-text);
+  line-height: 2rem;
+  position: relative;
+}
+
+div img{
+  width: 200px;
+  visibility: hidden;
+}
+
+h2{
+  font-family: var(--display-text);
+  font-size: 2rem;
+  letter-spacing: .15rem;
+  font-weight: 500;
+  margin: -6px 0 6px 8px;
+}
+
+.center-image{
+text-align: center;
+}
+
+section{
+  padding-left: 40px;
+  margin-left: 210px;
+  margin-top: 150px;
+}
+
+p {
+  padding: 8px;
+  margin: 24px 0 20px 0;
+}
+
+i,em{
+  font-style: italic;
+}
+
+p+p{
+  margin-top: -22px;
+}
+
+@media (min-width: 661px) and (max-width: 890px) {
+h1{
+  font-size: 2.8rem;
+  top:40px;
+  left:50px;
+}
+  html{
+    background-position: right;
+    background-size: 90%;
+  }
+
+  section{
+    padding-left: 10px;
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  h1{
+    font-size: 2.4rem;
+    top: 20px;
+    left: 20px;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  section{
+    padding-left: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  html{
+    background: #e7ded5;
+  }
+}
